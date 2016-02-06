@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Email PHP webpage</title>
+		
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		  <style>
+		  </style>
+		  
+	</head>
+		
+	<body>
+		<h1>Emailing in PHP!</h1>
+		
+	<div>
+		<?php
+			$emailTo = "Langk411@yahoo.com";
+			$subject = "I hope this works!";
+			$body = "I like to code!";
+			$header = "From: Lang411@gmail.com";
+			
+			mail($emailTo,$subject,$body,$header);
+			if (mail($emailTo,$subject,$body,$header)){
+				echo "Mail sent successfully!!"
+			}	
+			else {
+				echo "Mail not sent!";
+			}
+			#I need to test this later
+		?>	
+	</div>
+		
+	</body>
+</html>			  
+		  	
+		  	
